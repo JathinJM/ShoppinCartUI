@@ -10,7 +10,8 @@ Clone repository:
 
 git clone https://github.com/JathinJM/ShoppinCartUI.git
 
-Install & Run:
+Install:
+npm install
 
-> npm install
-> npm start
+Run:
+npm start
