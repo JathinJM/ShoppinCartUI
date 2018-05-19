@@ -1,0 +1,13 @@
+
+<div class="list-products">
+  <div class="list-product" *ngFor="let item of itemsAfterFilter()">
+    <spa-product
+      [id]="item.id"
+      [name]="item.name"
+      [price]="item.price"
+      [image]="item.image"
+      [currency]="item.currency">
+    </spa-product>
+  </div>
+</div>
+

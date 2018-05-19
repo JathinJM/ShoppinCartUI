@@ -1,0 +1,7 @@
+<div class="nav-bar">
+  <a *ngIf="location.path() !== '/products'" routerLink="/" class="back-button">Back</a>
+  <div class="open-shopping-cart" routerLink="/products/cart">
+    <img src="assets/images/cart.jpg" style="width: 50px;height:40px"/>{{(shoppingCartItems).length}}
+  </div>
+</div>
+<router-outlet></router-outlet>

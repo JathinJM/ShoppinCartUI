@@ -1,0 +1,15 @@
+<div class="product-details">
+  <div class="product">
+  <spa-product [name]="product.name"
+               [size]="'3'"
+               [price]="product.price"
+               [image]="product.image"
+  ></spa-product>
+    <button *ngIf="product.id==cart.id" [disabled]="!isValid" class="add-to-cart" (click)="addToCart(product)">
+      Add to Cart
+    </button>
+    <button *ngIf="product.id!=cart.id"  class="add-to-cart" (click)="addToCart(product)">
+      Add to Cart
+    </button>
+  </div>
+</div>
